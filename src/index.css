@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap');
+
+:root {
+  --soft-red: hsl(10, 79%, 65%);
+  --cyan: hsl(186, 34%, 60%);
+  --dark-brown: hsl(25, 47%, 15%);
+  --medium-brown: hsl(28, 10%, 53%);
+  --cream: hsl(27, 66%, 92%);
+  --white: hsl(33, 100%, 98%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: var(--cream);
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 320px;
+  min-height: 100vh;
+  font-size: 18px;
+  font-family: Overpass;
+}
+
+.balance {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: var(--white);
+  background-color: var(--soft-red);
+  padding: 15px 20px 10px 20px;
+  border-radius: 20px;
+}
+
+.balance p {
+  font-weight: 400;
+  margin-bottom: 5px;
+}
+
+svg {
+  width: 50px;
+}
+
+.spending {
+  margin-top: 20px;
+  border-radius: 20px;
+  padding: 20px;
+  background-color: var(--white);
+  color: var(--dark-brown);
+}
+
+.graph {
+  display: flex;
+  gap: 20px;
+  align-items: end;
+  margin-top: 60px;
+  width: auto;
+  border-bottom: 1px solid var(--cream);
+  padding-bottom: 30px;
+}
+
+.amount {
+  bottom: 200px;
+  border-radius: 5px;
+  height: 35px;
+  width: 65px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 10px;
+  color: var(--white);
+}
+
+.each-data {
+  width: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.data {
+  display: inline-block;
+  text-align: center;
+  background-color: var(--soft-red);
+  width: 40px;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+.data:hover {
+  background-color: var(--cyan);
+  cursor: pointer;
+}
+
+.graph p {
+  font-size: small;
+  color: var(--medium-brown);
+  text-align: center;
+}
+
+.active {
+  color: var(--white);
+  background-color: var(--dark-brown);
+}
+
+.this-month-p {
+  margin-top: 25px;
+  color: var(--medium-brown);
+  font-size: medium;
+}
+
+.this-month-div {
+  display: flex;
+  justify-content: space-between;
+  height: fit-content;
+  align-items: center;
+}
+
+.percent {
+  font-weight: 700;
+  text-align: end;
+}
+
+.comparasion-p {
+  font-size: medium;
+  color: var(--medium-brown);
+}
+
+h1 {
+  font-weight: 700;
+  font-size: 3rem;
+  
+}
